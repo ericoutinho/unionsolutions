@@ -1,0 +1,369 @@
+@charset "UTF-8";
+
+$brand-primaria: #003D4D;
+$brand-secundaria: #0F599C;
+$brand-terciaria: #168B87;
+$brand-light: #E6E6E6;
+$brand-dark: #333333;
+
+$body-padding-top: 56px;
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: $body-padding-top;
+}
+
+body {
+    padding: $body-padding-top 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+
+section {
+    padding: 3rem 0;
+    min-height: calc(100vh - #{$body-padding-top});
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: .25rem .75rem;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+.button.button-primary {
+    background: $brand-primaria;
+    color: $brand-light;
+}
+
+.button.button-primary:hover {
+    background: #00566b;
+    color: #fff;
+}
+
+.button.button-secondary {
+    background: $brand-secundaria;
+    color: $brand-light;
+}
+
+.button.button-secondary:hover {
+    background: #1164b1;
+    color: #fff;
+}
+
+.button.button-light {
+    background: $brand-light;
+    color: $brand-dark;
+}
+
+.button.button-light:hover {
+    background: #fff;
+    color: #444444;
+}
+
+form label {
+    font-size: .9rem;
+}
+
+nav.navbar {
+    background: $brand-primaria;
+}
+
+#apresentacao {
+    color: $brand-light;
+    height: calc(100vh - $body-padding-top);
+    background: $brand-primaria;
+    background-image: url("assets/apresentacao-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom; 
+    background-size: cover;
+}
+
+#quemsomos {
+    position: relative;
+    background: $brand-terciaria;
+    background-image: url("assets/quem-somos-bg.jpg");
+    background-attachment: fixed;
+    background-position: left bottom;
+    background-size: cover;
+
+    color: $brand-light;
+
+    .divider-turquoize {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: -2px; left: 0;
+    }
+}
+
+#servicos {
+    position: relative;
+    background: $brand-secundaria;
+    padding: 1.5rem 0 3rem;
+
+    .divider-grey {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 0;
+        bottom: -2px;
+    }
+
+    p{
+        color: $brand-light
+    }
+
+    h2, h3 {
+        color: #fff;
+    }
+}
+
+#alerta {
+    background: $brand-light;
+}
+
+#oferta {
+    position: relative;
+    background: $brand-primaria;
+    background-image: url(assets/halftone.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left center;
+    background-size: cover;
+    background-blend-mode:color-dodge;
+    color: $brand-light;
+
+    .divider-grey {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 0;
+        bottom: -2px;
+    }
+
+    .valor-oferta {
+        position: relative;
+        border: 2px solid $brand-light;
+        transform: rotateZ(-2deg);
+        display: inline-block;
+        background: $brand-terciaria;
+        padding: .75rem 1.2rem;
+        border-radius: 5px;
+        box-shadow: 5px 5px 16px rgba(0,0,0,0.3);
+        text-align: center;
+        color: $brand-light;
+
+        p { margin: 0; }
+
+        .legenda {
+            font-size: 1.25rem;
+            line-height: 1.25rem;
+            margin-bottom: .25rem;
+        }
+
+        .valor {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 700;
+            font-size: clamp(2rem, 8vw, 4rem);
+            line-height: 3.75rem;
+        }
+    }
+}
+
+#contato {
+    background: $brand-light;
+    padding: 3rem 0;
+}
+
+.contato-list-links {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 2rem;
+
+    li a {
+        display: inline-block;
+        padding: .25rem 0;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        color: $brand-terciaria;
+    }
+}
+
+#mapa {
+    padding: 0;
+    min-height: 75vh;
+}
+
+.mapa-google {
+    width: 100%;
+    height: 75vh;
+    padding: 0; margin: 0;
+}
+
+footer {
+    background: $brand-primaria;
+    color: $brand-light;
+    font-size: .9rem;
+    padding: 1rem 0;
+}
+
+
+// Lazzy effect
+.delay-1 {
+    transition-delay: 1s;
+}
+
+.delay-2 {
+    transition-delay: 1.5s;
+}
+
+.delay-3 {
+    transition-delay: 2s;
+}
+
+.from-top {
+    transform: translateY(-150px);
+    opacity: 0;
+    transition-property: transform opacity;
+    transition-duration: .5s;
+}
+
+.from-top.play {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.from-bottom {
+    transform: translateY(150px);
+    opacity: 0;
+    transition-property: transform opacity;
+    transition-duration: .5s;
+}
+
+.from-bottom.play {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.from-left {
+    transform: translateX(-150px);
+    opacity: 0;
+    transition-property: transform opacity;
+    transition-duration: .5s;
+}
+
+.from-left.play {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.from-right {
+    transform: translateX(150px);
+    opacity: 0;
+    transition-property: transform opacity;
+    transition-duration: .5s;
+}
+
+.from-right.play {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+// Modal
+
+.emodal {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9995;
+    position: fixed;
+    background: rgba(0,0,0,.75);
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+
+    .emodal-dialog {
+        margin: 0 1rem;
+        max-width: 400px;
+        display: block;
+        padding: 1rem;
+        border: 2px solid #ddd;
+        background: #f9f9f9;
+        border-radius: 4px;
+        box-shadow: 2px 2px 10px rba(0,0,0,1);
+    }
+
+    .emodal-dialog__title {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #444;
+        padding: 0 0 .5rem;
+        border-bottom: 1px solid #168B87;
+    }
+
+    .emodal-dialog__close {
+        cursor: pointer;
+        display: inline-flex;
+        justify-content: center; align-items: center;
+        width: 1.75rem; height: 1.75rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-top: -.25rem;
+    }
+
+    .emodal-dialog__close:hover {
+        background: #333333;
+        color: #f9f9f9;
+    }
+
+    .emodal-dialog__body {
+        font-size: .9rem;
+        padding: .5rem 0;
+    }
+
+    .emodal-dialog__ui {
+        text-align: center;
+        padding: .75rem 0 0;
+    }
+
+    .emodal-dialog__button {
+        position: relative;
+        padding: .25rem .75rem;
+        background: #f9f9f9;
+        border: 1px solid #ccc;
+        color: #444;
+        border-radius: 4px;
+        box-shadow: 0 0 5px rgba(110, 110, 110, 0.2);
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .emodal-dialog__button:hover {
+        background: #ddd;
+    }
+
+    .my-modal-dialog__button:focus {
+        box-shadow: 0 0 0 4px #bbb;
+        outline: none;
+    }
+}

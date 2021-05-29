@@ -1,0 +1,343 @@
+/* line 11, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 56px; }
+
+/* line 16, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+body {
+  padding: 56px 0 0 0;
+  font-family: 'Open Sans', sans-serif; }
+
+/* line 21, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700; }
+
+/* line 26, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+section {
+  padding: 3rem 0;
+  min-height: calc(100vh - 56px); }
+  /* line 30, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  section h2 {
+    font-size: 2.5rem; }
+
+/* line 35, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.button {
+  display: inline-block;
+  padding: .25rem .75rem;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: inherit; }
+
+/* line 45, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.button.button-primary {
+  background: #003D4D;
+  color: #E6E6E6; }
+
+/* line 50, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.button.button-primary:hover {
+  background: #00566b;
+  color: #fff; }
+
+/* line 55, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.button.button-secondary {
+  background: #0F599C;
+  color: #E6E6E6; }
+
+/* line 60, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.button.button-secondary:hover {
+  background: #1164b1;
+  color: #fff; }
+
+/* line 65, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.button.button-light {
+  background: #E6E6E6;
+  color: #333333; }
+
+/* line 70, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.button.button-light:hover {
+  background: #fff;
+  color: #444444; }
+
+/* line 75, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+form label {
+  font-size: .9rem; }
+
+/* line 79, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+nav.navbar {
+  background: #003D4D; }
+
+/* line 83, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+#apresentacao {
+  color: #E6E6E6;
+  height: calc(100vh - $body-padding-top);
+  background: #003D4D;
+  background-image: url("assets/apresentacao-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover; }
+
+/* line 93, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+#quemsomos {
+  position: relative;
+  background: #168B87;
+  background-image: url("assets/quem-somos-bg.jpg");
+  background-attachment: fixed;
+  background-position: left bottom;
+  background-size: cover;
+  color: #E6E6E6; }
+  /* line 103, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  #quemsomos .divider-turquoize {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: -2px;
+    left: 0; }
+
+/* line 112, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+#servicos {
+  position: relative;
+  background: #0F599C;
+  padding: 1.5rem 0 3rem; }
+  /* line 117, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  #servicos .divider-grey {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: -2px; }
+  /* line 125, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  #servicos p {
+    color: #E6E6E6; }
+  /* line 129, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  #servicos h2, #servicos h3 {
+    color: #fff; }
+
+/* line 134, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+#alerta {
+  background: #E6E6E6; }
+
+/* line 138, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+#oferta {
+  position: relative;
+  background: #003D4D;
+  background-image: url(assets/halftone.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left center;
+  background-size: cover;
+  background-blend-mode: color-dodge;
+  color: #E6E6E6; }
+  /* line 149, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  #oferta .divider-grey {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: -2px; }
+  /* line 157, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  #oferta .valor-oferta {
+    position: relative;
+    border: 2px solid #E6E6E6;
+    transform: rotateZ(-2deg);
+    display: inline-block;
+    background: #168B87;
+    padding: .75rem 1.2rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #E6E6E6; }
+    /* line 169, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+    #oferta .valor-oferta p {
+      margin: 0; }
+    /* line 171, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+    #oferta .valor-oferta .legenda {
+      font-size: 1.25rem;
+      line-height: 1.25rem;
+      margin-bottom: .25rem; }
+    /* line 177, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+    #oferta .valor-oferta .valor {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 700;
+      font-size: clamp(2rem, 8vw, 4rem);
+      line-height: 3.75rem; }
+
+/* line 186, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+#contato {
+  background: #E6E6E6;
+  padding: 3rem 0; }
+
+/* line 191, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.contato-list-links {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 2rem; }
+  /* line 196, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  .contato-list-links li a {
+    display: inline-block;
+    padding: .25rem 0;
+    color: inherit;
+    text-decoration: none; }
+  /* line 203, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  .contato-list-links li a:hover {
+    color: #168B87; }
+
+/* line 208, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+#mapa {
+  padding: 0;
+  min-height: 75vh; }
+
+/* line 213, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.mapa-google {
+  width: 100%;
+  height: 75vh;
+  padding: 0;
+  margin: 0; }
+
+/* line 219, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+footer {
+  background: #003D4D;
+  color: #E6E6E6;
+  font-size: .9rem;
+  padding: 1rem 0; }
+
+/* line 228, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.delay-1 {
+  transition-delay: 1s; }
+
+/* line 232, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.delay-2 {
+  transition-delay: 1.5s; }
+
+/* line 236, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.delay-3 {
+  transition-delay: 2s; }
+
+/* line 240, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.from-top {
+  transform: translateY(-150px);
+  opacity: 0;
+  transition-property: transform opacity;
+  transition-duration: .5s; }
+
+/* line 247, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.from-top.play {
+  transform: translateY(0);
+  opacity: 1; }
+
+/* line 252, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.from-bottom {
+  transform: translateY(150px);
+  opacity: 0;
+  transition-property: transform opacity;
+  transition-duration: .5s; }
+
+/* line 259, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.from-bottom.play {
+  transform: translateY(0);
+  opacity: 1; }
+
+/* line 264, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.from-left {
+  transform: translateX(-150px);
+  opacity: 0;
+  transition-property: transform opacity;
+  transition-duration: .5s; }
+
+/* line 271, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.from-left.play {
+  transform: translateX(0);
+  opacity: 1; }
+
+/* line 276, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.from-right {
+  transform: translateX(150px);
+  opacity: 0;
+  transition-property: transform opacity;
+  transition-duration: .5s; }
+
+/* line 283, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.from-right.play {
+  transform: translateX(0);
+  opacity: 1; }
+
+/* line 290, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+.emodal {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9995;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+  /* line 301, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  .emodal .emodal-dialog {
+    margin: 0 1rem;
+    max-width: 400px;
+    display: block;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 2px 2px 10px rba(0, 0, 0, 1); }
+  /* line 312, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  .emodal .emodal-dialog__title {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #444;
+    padding: 0 0 .5rem;
+    border-bottom: 1px solid #168B87; }
+  /* line 324, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  .emodal .emodal-dialog__close {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: -.25rem; }
+  /* line 334, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  .emodal .emodal-dialog__close:hover {
+    background: #333333;
+    color: #f9f9f9; }
+  /* line 339, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  .emodal .emodal-dialog__body {
+    font-size: .9rem;
+    padding: .5rem 0; }
+  /* line 344, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  .emodal .emodal-dialog__ui {
+    text-align: center;
+    padding: .75rem 0 0; }
+  /* line 349, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  .emodal .emodal-dialog__button {
+    position: relative;
+    padding: .25rem .75rem;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    color: #444;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(110, 110, 110, 0.2);
+    text-decoration: none;
+    color: inherit; }
+  /* line 361, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  .emodal .emodal-dialog__button:hover {
+    background: #ddd; }
+  /* line 365, C:/Users/Dev/Desktop/union/Themes/unionsolutions/scss/custom.scss */
+  .emodal .my-modal-dialog__button:focus {
+    box-shadow: 0 0 0 4px #bbb;
+    outline: none; }
+
+/*# sourceMappingURL=custom.css.map */
