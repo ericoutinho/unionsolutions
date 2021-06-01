@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Union Solutions Serra/ES</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= get_template_directory_uri() ?>/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= get_template_directory_uri() ?>/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= get_template_directory_uri() ?>/assets/favicon-16x16.png">
+    <link rel="manifest" href="<?= get_template_directory_uri() ?>/assets/site.webmanifest">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -58,7 +63,7 @@
             </nav>
         </header>
 
-        <section id="apresentacao" class="d-flex align-items-strectch pb-0">
+        <!-- <section id="apresentacao" class="d-flex align-items-strectch pb-0">
             <div class="container d-flex align-items-stretch">
                 <div class="row d-flex align-items-center">
                     <div class="col-12 col-lg-6 text-center text-lg-start mb-4 mb-lg-0 lazzy from-left delay-1">
@@ -71,8 +76,66 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+
+        <section id="apresentacao" class="d-flex align-items-stretch pb-0">
+            <div class="container d-flex align-items-stretch">
+                <!-- Vanilla slider -->
+                <div class="slider">
+                    <!-- navegação lateral -->
+                    <nav class="slider-nav slider-prev" onclick="playPrev()"><img src="<?= get_template_directory_uri() ?>/assets/angle-left-solid.svg" aria-controls="previous"></nav>
+                    <nav class="slider-nav slider-next" onclick="playNext()"><img src="<?= get_template_directory_uri() ?>/assets/angle-right-solid.svg" aria-controls="next"></nav>
+
+                    <!-- navegação pontos -->
+                    <nav class="slider-dots">
+                        <!-- <div class="slider-dots__item active"></div> -->
+                    </nav>
+
+                    <!-- slides -->
+                    <div class="slider-wraper">
+                        <div class="slider-item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-12 col-lg-6 text-center text-lg-left mb-3 mb-lg-0">
+                                    <h2 class="mb-3" style="font-size: clamp(2rem,3vw,2.5rem);">Referência de qualidade e segurança em vistoria veicular</h2>
+                                    <p class="mb-3">A <strong style="color:#fff;">Union Solutions em Serra/ES</strong> é um empresa credenciada ao <strong style="color:#fff;">Detran/ES</strong> especializada em vistorias veiculares cautelares e eletrônicas, oferecendo serviços com qualidade garantida.</p>
+                                    <a class="button button-secondary" href="#quemsomos"><i class="fas fa-plus me-2"></i>Saiba mais</a>
+                                </div>
+                                <div class="col-12 col-lg-6 align-self-end">
+                                    <img src="<?= get_template_directory_uri() ?>/assets/union-apresentacao-ator.png" style="width:100%; height: auto;" class="lazzy from-right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-12 col-lg-6 text-center text-lg-left mb-3 mb-lg-0">
+                                    <h2 class="mb-3" style="font-size: clamp(2rem,3vw,2.5rem);">Não seja enganado!</h2>
+                                    <p class="mb-3"><strong style="color:#fff;">Fraudes e adulterações envolvendo veículos</strong> podem causar prejuízos financeiros e morais, muita burocracia e problemas judiciais para o comprador. Descubra como a <strong style="color:#fff;">Union Solutions em Serra/ES</strong> pode te proteger.</p>
+                                    <a class="button button-secondary" href="#alerta"><i class="fas fa-shield me-2"></i>Proteja-se hoje mesmo!</a>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <img src="<?= get_template_directory_uri() ?>/assets/alerta-golpe.png" style="width:100%; height: auto;" class="lazzy from-right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-12 col-lg-6 text-center text-lg-left mb-3 mb-lg-0">
+                                    <h2 class="mb-3" style="font-size: clamp(2rem,3vw,2.5rem);">Achou uma boa oferta online mas tem medo de fechar?</h2>
+                                    <p class="mb-3">O <strong style="color:#fff;">Laudo Cautelar Union</strong> ajuda a você decidir com segurança, permitindo uma negociação mais transparente e livre de surpresas.</p>
+                                    <a class="button button-secondary" href="#oferta"><i class="far fa-thumbs-up me-2"></i>Aproveite as condições!</a>
+                                </div>
+                                <div class="col-12 col-lg-6 align-self-end">
+                                    <img src="<?= get_template_directory_uri() ?>/assets/ator-online.png" style="width:100%; height: auto;" class="lazzy from-right">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- Seção QUEM SOMOS -->
         <section id="quemsomos" class="d-flex align-items-stretch">
             <div class="container d-flex align-items-center">
                 <div class="row">
@@ -86,6 +149,7 @@
             </div>
             <img src="<?= get_template_directory_uri() ?>/assets/divider-turquoize.svg" class="divider-turquoize">
         </section>
+        <!-- Fim Seção QUEM SOMOS -->
 
         <!-- Seção SERVIÇOS -->
         <section id="servicos" class="d-flex align-items-center">
@@ -100,8 +164,8 @@
                     <div class="col-12 col-lg-6 mb-4 mb-lg-0 lazzy from-bottom delay-1">
                         <div class="text-center px-4">
                             <img src="<?= get_template_directory_uri() ?>/assets/union-icone-eletronica.svg" style="width:55%;height:auto;margin-bottom:1.25rem;" alt="">
-                            <h3 style="margin-bottom:1.5rem;font-size:2rem;"><i class="fad fa-search me-2"></i>Vistoria eletrônica</h3>
-                            <p style="font-size:.9rem;">A vistoria eletrônica é realizada <strong style="color:#fff;">através de credenciamento junto ao Detran/ES</strong>, atendendo as demandas do órgão nos processos em que a vistoria veicular se torna compulsória, como transferência de propriedade, domicílio, alteração de características do veículo entre outras.</p>
+                            <h3 style="margin-bottom:1.5rem;font-size:2rem;"><i class="fad fa-search me-2"></i>Vistoria Detran</h3>
+                            <p style="font-size:.9rem;">A vistoria é realizada <strong style="color:#fff;">através de credenciamento junto ao Detran/ES</strong>, atendendo as demandas do órgão nos processos em que a vistoria veicular se torna compulsória, como transferência de propriedade, domicílio, alteração de características do veículo entre outras.</p>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 lazzy from-bottom delay-2">
@@ -236,10 +300,10 @@
         <footer>
             <div class="container">
                 <div class="row d-flex align-items-center">
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6 text-center text-lg-start mb-3 mb-lg-0">
                         Union Solutions Serra/ES &copy; <?= date('Y') ?> &bullet; Direitos reservados
                     </div>
-                    <div class="col-12 col-lg-6 text-end">
+                    <div class="col-12 col-lg-6 text-center text-lg-end">
                         <a href="<?= home_url() ?>">
                             <img src="<?= get_template_directory_uri() ?>/assets/logo-union-solutions-serra.svg" alt="" style="height:3rem; width:auto;">
                         </a>
@@ -247,6 +311,11 @@
                 </div>
             </div>
         </footer>
+    </div>
+
+    <div class="zap">
+        <div class="zap-pulse"></div>
+        <a href="https://wa.me/5527997776878" target="_blank" class="zap-button"><i class="fab fa-whatsapp"></i></a>
     </div>
 
     <!-- <div class="emodal">
@@ -268,6 +337,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     <script src="<?= get_template_directory_uri() ?>/js/custom.js"></script>
+    <script src="<?= get_template_directory_uri() ?>/js/slider.js"></script>
     <?= wp_footer() ?>
 </body>
 
