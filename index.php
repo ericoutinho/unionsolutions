@@ -5,7 +5,25 @@
     <meta charset="<?= bloginfo("charset") ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
     <title>Union Solutions Serra/ES</title>
+    <meta name="title" content="<?= bloginfo('title') ?>">
+    <meta name="description" content="<?= bloginfo("description") ?>">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?= bloginfo('url') ?>">
+    <meta property="og:title" content="<?= bloginfo('title') ?>">
+    <meta property="og:description" content="<?= bloginfo("description") ?>">
+    <meta property="og:image" content="<?= get_template_directory_uri() ?>/assets/union-solutions-cover.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="<?= bloginfo('url') ?>">
+    <meta property="twitter:title" content="<?= bloginfo('title') ?>">
+    <meta property="twitter:description" content="<?= bloginfo("description") ?>">
+    <meta property="twitter:image" content="<?= get_template_directory_uri() ?>/assets/union-solutions-cover.jpg">
 
     <link rel="apple-touch-icon" sizes="180x180" href="<?= get_template_directory_uri() ?>/assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= get_template_directory_uri() ?>/assets/favicon-32x32.png">
@@ -63,21 +81,6 @@
             </nav>
         </header>
 
-        <!-- <section id="apresentacao" class="d-flex align-items-strectch pb-0">
-            <div class="container d-flex align-items-stretch">
-                <div class="row d-flex align-items-center">
-                    <div class="col-12 col-lg-6 text-center text-lg-start mb-4 mb-lg-0 lazzy from-left delay-1">
-                        <h2 class="mb-3">Referência de qualidade e segurança em vistoria veicular</h2>
-                        <p class="mb-3">A <strong style="color:#fff;">Union Solutions em Serra/ES</strong> é um empresa credenciada ao <strong style="color:#fff;">Detran/ES</strong> especializada em vistorias veiculares cautelares e eletrônicas, oferecendo serviços com qualidade garantida.</p>
-                        <a class="button button-light" href="#quemsomos"><i class="fas fa-plus me-2"></i>Saiba mais</a>
-                    </div>
-                    <div class="col-12 col-lg-6 text-center align-self-end">
-                        <img src="<?= get_template_directory_uri() ?>/assets/union-apresentacao-ator.png" style="width:100%; height: auto;" class="lazzy from-right">
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
         <section id="apresentacao" class="d-flex align-items-stretch pb-0">
             <div class="container d-flex align-items-stretch">
                 <!-- Vanilla slider -->
@@ -101,7 +104,7 @@
                                     <a class="button button-secondary" href="#quemsomos"><i class="fas fa-plus me-2"></i>Saiba mais</a>
                                 </div>
                                 <div class="col-12 col-lg-6 align-self-end">
-                                    <img src="<?= get_template_directory_uri() ?>/assets/union-apresentacao-ator.png" style="width:100%; height: auto;" class="lazzy from-right">
+                                    <img src="<?= get_template_directory_uri() ?>/assets/union-apresentacao-ator.webp" style="width:100%; height: auto;" class="lazzy from-right">
                                 </div>
                             </div>
                         </div>
@@ -113,7 +116,7 @@
                                     <a class="button button-secondary" href="#alerta"><i class="fas fa-shield me-2"></i>Proteja-se hoje mesmo!</a>
                                 </div>
                                 <div class="col-12 col-lg-6">
-                                    <img src="<?= get_template_directory_uri() ?>/assets/alerta-golpe.png" style="width:100%; height: auto;" class="lazzy from-right">
+                                    <img src="<?= get_template_directory_uri() ?>/assets/alerta-golpe.webp" style="width:100%; height: auto;" class="lazzy from-right">
                                 </div>
                             </div>
                         </div>
@@ -125,7 +128,7 @@
                                     <a class="button button-secondary" href="#oferta"><i class="far fa-thumbs-up me-2"></i>Aproveite as condições!</a>
                                 </div>
                                 <div class="col-12 col-lg-6 align-self-end">
-                                    <img src="<?= get_template_directory_uri() ?>/assets/ator-online.png" style="width:100%; height: auto;" class="lazzy from-right">
+                                    <img src="<?= get_template_directory_uri() ?>/assets/ator-online.webp" style="width:100%; height: auto;" class="lazzy from-right">
                                 </div>
                             </div>
                         </div>
@@ -161,18 +164,25 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-lg-6 mb-4 mb-lg-0 lazzy from-bottom delay-1">
-                        <div class="text-center px-4">
+                    <div class="col-12 col-lg-4 mb-4 mb-lg-0 lazzy from-bottom delay-1">
+                        <div class="text-center px-3">
                             <img src="<?= get_template_directory_uri() ?>/assets/union-icone-eletronica.svg" style="width:55%;height:auto;margin-bottom:1.25rem;" alt="">
                             <h3 style="margin-bottom:1.5rem;font-size:2rem;"><i class="fad fa-search me-2"></i>Vistoria Detran</h3>
-                            <p style="font-size:.9rem;">A vistoria é realizada <strong style="color:#fff;">através de credenciamento junto ao Detran/ES</strong>, atendendo as demandas do órgão nos processos em que a vistoria veicular se torna compulsória, como transferência de propriedade, domicílio, alteração de características do veículo entre outras.</p>
+                            <p style="font-size:.9rem;">A vistoria é realizada <strong style="color:#fff;">através de credenciamento junto ao Detran/ES</strong>, atendendo aos processos que demandem vistorias veiculares, como transferência de propriedade, domicílio, alteração de características do veículo, entre outras.</p>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6 lazzy from-bottom delay-2">
-                        <div class="text-center px-4">
+                    <div class="col-12 col-lg-4 lazzy from-bottom delay-2">
+                        <div class="text-center px-3">
                             <img src="<?= get_template_directory_uri() ?>/assets/union-icone-cautelar.svg" style="width:55%;height:auto;margin-bottom:1.25rem;" alt="">
                             <h3 style="margin-bottom:1.5rem;font-size:2rem;"><i class="fad fa-check me-2"></i>Vistoria Cautelar</h3>
-                            <p style="font-size:.9rem;">A vistoria cautelar é <strong style="color:#fff;">voltada para os clientes de pretendem vender ou comprar</strong> um veículo seminovo e desejam ter em mãos um panorama detalhado antes de concluir o negócio, seja para obter um poder maior de negociação ou para se proteger contra fraudes e adulterações.</p>
+                            <p style="font-size:.9rem;">A vistoria cautelar é <strong style="color:#fff;">voltada para quem quer vender ou comprar</strong> um veículo seminovo e deseja saber um panorama detalhado do mesmo para garantir um poder maior de negociação ou para proteção contra fraudes e adulterações.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 lazzy from-bottom delay-3">
+                        <div class="text-center px-3">
+                            <img src="<?= get_template_directory_uri() ?>/assets/union-icone-consulta.svg" style="width:55%;height:auto;margin-bottom:1.25rem;" alt="">
+                            <h3 style="margin-bottom:1.5rem;font-size:2rem;"><i class="fad fa-fingerprint me-2"></i></i>Consulta Veicular</h3>
+                            <p style="font-size:.9rem;">Apenas pelo número da placa, a <strong style="color:#fff;">Consulta Veicular Union</strong> revela informações detalhadas sobre o veículos, como: leilões, sinistros, aceitação em seguros, recall, restrições, histórico de KM, Renavam, roubo e furto, débitos e muito mais!</p>
                         </div>
                     </div>
                 </div>
@@ -193,7 +203,7 @@
                         <a href="#oferta" class="button button-primary mt-2"><i class="fas fa-shield me-2"></i>Veja como se proteger!</a>
                     </div>
                     <div class="col-12 col-lg-6">
-                        <img src="<?= get_template_directory_uri() ?>/assets/alerta-golpe.png" style="width:100%; height: auto;" class="lazzy from-right">
+                        <img src="<?= get_template_directory_uri() ?>/assets/alerta-golpe.webp" style="width:100%; height: auto;" class="lazzy from-right">
                     </div>
                 </div>
             </div>
@@ -205,7 +215,7 @@
             <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class="col-12 col-lg-6">
-                        <img src="<?= get_template_directory_uri() ?>/assets/oferta-cautelar.png" style="width:100%; height: auto;" class="lazzy from-left">
+                        <img src="<?= get_template_directory_uri() ?>/assets/oferta-cautelar.webp" style="width:100%; height: auto;" class="lazzy from-left">
                     </div>
                     <div class="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start">
                         <div class="lazzy from-right delay-1 text-center text-lg-start">
@@ -236,11 +246,12 @@
                                 Serra/ES &bullet; 29161-109
                             </li>
                             <li><a href="tel:552734416191" target="_blank"><i class="fas fa-fw fa-phone me-1" style="color:#168B87;"></i>+55 <strong>(27) 3441.6191</strong></a></li>
-                            <li><a href="tel:5527997776878" target="_blank"><i class="fas fa-fw fa-mobile-alt me-1" style="color:#168B87;"></i>+55 <strong>(27) 99777.6878</strong></a></li>
-                            <li><a href="#" target="_blank"><i class="fas fa-fw fa-envelope me-1" style="color:#168B87;"></i>E-mail</a></li>
-                            <li><a class="me-2" href="#" target="_blank"><i class="fab fa-2x fa-whatsapp"></i></a>
-                                <a class="me-2" href="#" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
-                                <a class="me-2" href="#" target="_blank"><i class="fab fa-2x fa-facebook-square"></i></a>
+                            <li><a href="tel:55527997776878" target="_blank"><i class="fas fa-fw fa-mobile-alt me-1" style="color:#168B87;"></i>+55 <strong>(27) 99777.6878</strong></a></li>
+                            <li><a href="tel:55527996906878" target="_blank"><i class="fas fa-fw fa-mobile-alt me-1" style="color:#168B87;"></i>+55 <strong>(27) 99690.6878</strong></a></li>
+                            <li><a href="mailto:diretoria@unionserraes.com.br" target="_blank"><i class="fas fa-fw fa-envelope me-1" style="color:#168B87;"></i>diretoria@unionserraes.com.br</a></li>
+                            <li><a class="me-2" href="https://wa.me/5527997776878" target="_blank"><i class="fab fa-2x fa-whatsapp"></i></a>
+                                <a class="me-2" href="https://instagram.com/unionserraes" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
+                                <a class="me-2" href="https://facebook.com/unionserraes" target="_blank"><i class="fab fa-2x fa-facebook-square"></i></a>
                             </li>
                         </ul>
                         <h4 class="mb-3">Expediente</h4>
@@ -249,40 +260,57 @@
                     </div>
 
                     <div class="col-12 col-lg-6">
-                        <div class="border rounded shadow-sm p-3">
-                            <form action="#" method="post">
+                        <div class="border rounded shadow-sm p-4">
+                            <form action="<?= admin_url("admin-ajax.php") ?>" method="post" id="contact-form">
                                 <div class="row">
                                     <div class="col-12 text-center">
                                         <h3><i class="fas fa-envelope-open-text me-2" style="color:#168B87;"></i>Deixe a sua mensagem</h3>
-                                        <p>Utilize os campos abaixo para tirar dúvidas ou solicitar mais informações sobre os serviços oferecidos pela Union Solutions.</p>
+                                        <p>Tire dúvidas ou solicite mais informações sobre os serviços oferecidos pela Union Solutions.</p>
                                     </div>
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col-12 form-group">
-                                        <label for="nome">Nome</label>
-                                        <input type="text" name="nome" id="nome" class="form-control form-control-sm">
-                                    </div>
-                                </div>
-                                <div class="row mb-2">
-                                    <div class="col-12 col-lg-6 form-group">
-                                        <label for="email">E-mail</label>
-                                        <input type="email" name="email" id="email" class="form-control form-control-sm">
-                                    </div>
-                                    <div class="col-12 col-lg-6 form-group">
-                                        <label for="telefone">Telefone</label>
-                                        <input type="text" name="telefone" id="telefone" class="form-control form-control-sm mask-telefone">
+                                        <label for="nome">Nome <strong style="color: coral;">*</strong></label>
+                                        <input type="text" pattern=".{3,}" name="nome" id="nome" class="form-control form-control-sm" required>
+                                        <div class="invalid-feedback">É necessário informar o seu nome</div>
                                     </div>
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col-12 form-group">
-                                        <label for="mensagem">Mensagem</label>
-                                        <textarea class="form-control form-control-sm" name="mensagem" id="mensagem" rows="5"></textarea>
+                                        <label for="email">E-mail <strong style="color: coral;">*</strong></label>
+                                        <input type="email" name="email" id="email" class="form-control form-control-sm" required>
+                                        <div class="invalid-feedback">Informe um e-mail válido</div>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-12 form-group">
+                                        <label for="telefone">Telefone <strong style="color: coral;">*</strong></label>
+                                        <input type="text" name="telefone" id="telefone" class="form-control form-control-sm mask-telefone" placeholder="DDD + Número" required>
+                                        <div class="invalid-feedback">Informe um telefone com DDD</div>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-12 form-group">
+                                        <label for="departamento">Departamento</label>
+                                        <select name="departamento" id="departamento" class="form-select form-select-sm">
+                                            <option value="comercial" selected>Comercial</option>
+                                            <option value="sac">SAC</option>
+                                            <option value="ouvidoria">Ouvidoria</option>
+                                            <option value="direcao">Direção</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-12 form-group">
+                                        <label for="mensagem">Mensagem <strong style="color: coral;">*</strong></label>
+                                        <textarea class="form-control form-control-sm" name="mensagem" id="mensagem" rows="4" required></textarea>
+                                        <div class="invalid-feedback">Escreva aqui a sua mensagem</div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 form-group text-center">
-                                        <button type="submit" class="button button-primary"><i class="fas fa-check me-1"></i>Enviar</button>
-                                        <button type="cancel" class="button button-secondary"><i class="fas fa-times me-1"></i>Cancelar</button>
+                                        <button type="submit" class="button button-primary"><i class="fas fa-check me-1"></i>Enviar mensagem</button>
+                                        <button type="reset" class="button button-secondary"><i class="fas fa-times me-1"></i>Cancelar</button>
                                     </div>
                                 </div>
                             </form>
@@ -315,29 +343,29 @@
 
     <div class="zap">
         <div class="zap-pulse"></div>
-        <a href="https://wa.me/5527997776878" target="_blank" class="zap-button"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5527996906878&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es." target="_blank" class="zap-button"><i class="fab fa-whatsapp"></i></a>
     </div>
 
-    <!-- <div class="emodal">
+    <div class="emodal">
         <div class="emodal-dialog">
-            <div class="emodal-dialog__title">
-                Título do modal
-                <span class="emodal-dialog__close"><i class="fa fa-times"></i></span>
+            <div class="emodal-dialog__header">
+                <span class="emodal-dialog__title"></span>
+                <span onclick="closeModal()" class="emodal-dialog__close"><i class="fa fa-times"></i></span>
             </div>
             <div class="emodal-dialog__body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero repudiandae officia!
             </div>
             <div class="emodal-dialog__ui">
-                <a href="#modal" class="emodal-dialog__button"><i class="fas fa-times me-2"></i>Fechar</a>
+                <a href="javascript:void(0)" onclick="closeModal()" class="emodal-dialog__button"><i class="fas fa-times me-2"></i>Fechar</a>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     <script src="<?= get_template_directory_uri() ?>/js/custom.js"></script>
     <script src="<?= get_template_directory_uri() ?>/js/slider.js"></script>
+    <script src="<?= get_template_directory_uri() ?>/js/contactform.js"></script>
     <?= wp_footer() ?>
 </body>
 
